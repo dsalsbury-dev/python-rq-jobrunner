@@ -4,7 +4,20 @@ version = "0.1.0"
 description = "FastAPI + RQ job runner (API + worker) with Postgres/Redis."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "fastapi[standard]>=0.135.1",
+    "psycopg[binary]>=3.3.3",
+    "pydantic-settings>=2.13.1",
+    "python-dotenv>=1.2.2",
+    "redis>=7.2.1",
+    "rq>=2.7.0",
+    "sqlalchemy>=2.0.48",
+    "uvicorn[standard]>=0.41.0",
+]
 
 [dependency-groups]
-dev = []
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.2",
+    "ruff>=0.15.4",
+]
