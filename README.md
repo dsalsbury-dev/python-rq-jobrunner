@@ -8,6 +8,7 @@ A small, production-minded system that demonstrates:
 
 - Python service design (FastAPI API surface)
 - Distributed execution (Redis queue + separate worker)
+- Postgres as the source of truth for job state/history
 - Automation (Makefile + scripts to provision/deploy/scale)
 - Reliability patterns (idempotency, retries, state machine)
 - Observability (structured logs + correlation IDs)
